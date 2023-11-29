@@ -1,0 +1,30 @@
+# .gitignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+*.log
+*.sqlite
+
+# Docker
+.DS_Store
+node_modules/
+npm-debug.log
+# Dockerfile
+# docker-compose.yml
+.dockerignore
+*.dockerfile
+*.Dockerfile
+
+# Flask
+instance/
+
+# If you are using SQLite
+*.sqlite
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
