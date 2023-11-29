@@ -22,6 +22,7 @@ Este es el backend de la aplicación web de tabla de posiciones para el juego de
 - SQLAlchemy: Biblioteca para interactuar con la base de datos.
 - SQLite: Sistema de gestión de bases de datos utilizado para almacenar los datos de la aplicación.
 - Docker
+- Pytest: Marco de pruebas para Python.
 
 ## Modelos de base de datos
 
