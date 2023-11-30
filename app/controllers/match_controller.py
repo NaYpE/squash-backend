@@ -1,8 +1,8 @@
 # match_controller.py
 from flask import Blueprint, request, jsonify
 from sqlalchemy.exc import IntegrityError
-from .models import Match, User
-from .database import db_session
+from ..models import Match, User
+from ..database import db_session
 from datetime import datetime
 
 match_blueprint = Blueprint('match_blueprint', __name__)

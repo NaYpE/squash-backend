@@ -1,7 +1,7 @@
 # ranking_controller.py
 from flask import Blueprint, jsonify
-from .models import Ranking, User
-from .database import db_session
+from ..models import Ranking, User
+from ..database import db_session
 
 ranking_blueprint = Blueprint('ranking_blueprint', __name__)
 

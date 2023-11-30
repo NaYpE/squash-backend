@@ -1,8 +1,8 @@
 # user_controller.py
 from flask import Blueprint, request, jsonify
 from sqlalchemy.exc import IntegrityError
-from .models import User
-from .database import db_session
+from ..models import User
+from ..database import db_session
 
 user_blueprint = Blueprint('user_blueprint', __name__)
 
@@ -36,7 +36,7 @@ def create_user():
     try:
         db_session.add(new_user)
         db_session.commit()
-        return jsonify({'message': 'User created successfully'})
+        return jsonify({'message': 'User created successfully'}), 201
     except IntegrityError:
         db_session.rollback()
         return jsonify({'message': 'Error: Email is already in use'}), 400
